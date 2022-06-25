@@ -1,0 +1,28 @@
+anchor_version = "0.24.2"
+solana_version = "1.9.12"
+
+[workspace]
+members = [
+    "fuzz",
+    "stable-swap-anchor",
+    "stable-swap-client",
+    "stable-swap-math",
+    "stable-swap-math/sim",
+    "stable-swap-program/program"
+]
+
+[provider]
+cluster = "localnet"
+wallet = "~/.config/solana/id.json"
+
+[programs.mainnet]
+stable_swap = "BYjjfTKRKnvZjqeC2NV5koivcQn1Ude6zF6b3LnjxPzk"
+
+[programs.devnet]
+stable_swap = "BYjjfTKRKnvZjqeC2NV5koivcQn1Ude6zF6b3LnjxPzk"
+
+[programs.testnet]
+stable_swap = "BYjjfTKRKnvZjqeC2NV5koivcQn1Ude6zF6b3LnjxPzk"
+
+[programs.localnet]
+stable_swap = "BYjjfTKRKnvZjqeC2NV5koivcQn1Ude6zF6b3LnjxPzk"
